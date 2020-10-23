@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+#container {
+    height: calc(100vh - 60px);
+    margin: 30px 12px;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profile--picture {
+    background: url("profilePhoto.png") no-repeat center center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 38px;
+}
+
+#profile--name {
+    margin-top: 10px;
+}
+
+#profile--location {
+    font-size: 10px;
+    margin-top: 4px;
+    color: #A9A9A9;
+}
+
+#profile--box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 27px;
+}
+
+.profile--information {
+    background-color: #E5E5E5;
+    width: 78px;
+    height: 52px;
+    margin: 12px 6px;
+    border-radius: 12px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#pictures {
+    display: grid;
+    grid-template-columns: 109px 109px 109px 109px;
+    grid-template-rows: auto;
+    column-gap: 11px;
+    row-gap: 13px;
+    grid-template-areas: 
+    "one two two"
+    "three three four"
+    "six five four"
+}
+
+.pictures--box {
+    border-radius: 24px;
+    box-shadow: 0px 4px 6px rgba(0, 0 , 0, 0.15);
+    min-width: 109px;
+    min-height: 109px;
+}
+
+#box--1 {
+    background: url("photo1.png") no-repeat center center;
+    background-size: cover;
+    grid-area: one;
+}
+
+#box--2 {
+    background: url("photo2.png") no-repeat center center;
+    background-size: cover;
+    grid-area: two;
+}
+
+#box--3 {
+    background: url("photo3.png") no-repeat center center;
+    background-size: cover;
+    grid-area: three;
+}
+
+#box--4 {
+    background: url("photo4.png") no-repeat center center;
+    background-size: cover;
+    grid-area: four;
+}
+
+#box--5 {
+    background: url("photo5.png") no-repeat center center;
+    background-size: cover;
+    grid-area: five;
+}
+
+#box--6 {
+    background: url("photo6.png") no-repeat center center;
+    background-size: cover;
+    grid-area: six;
+}
+
+#myName {
+    text-align: center;
+    color: #A9A9A9;
+    margin-top: 40px;
+}
+
+#myName a {
+    color: #A9A9A9;
+    text-decoration: none;
+    padding: 0px 5px;
+    transition: .2s ease-in-out;
+}
+
+#myName a:hover {
+    color: #fff;
+    background-color: #A9A9A9;
+    padding: 5px;
+}
